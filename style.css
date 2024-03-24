@@ -1,12 +1,6 @@
 /* Colors: Deep Blue, Bright Orange, Lime Green, Sandy Beige, and Coral Red */
 
 :root {
-  --deep-blue: #003366;
-  --bright-orange: #ffa500;
-  --lime-green: #32cd32;
-  --sandy-beige: #f4a460;
-  --coral-red: #ff4040;
-
   --url-hiking: url("https://github.com/flos-code/glem-markup/assets/148456982/fd496d12-1704-4ea1-a436-a03d9135550f");
   --url-canoeing: url("https://github.com/flos-code/glem-markup/assets/148456982/ccb4a350-57ad-4d25-9810-0fd9af901605");
   --url-fishing: url("https://github.com/flos-code/glem-markup/assets/148456982/8706af35-9d2f-46d9-8dff-2296ce9f9342");
@@ -18,9 +12,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin: 128px;
-  font-family: "Fredoka One", sans-serif;
+  font-family: "Fredoka", sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 
 body::before {
@@ -36,7 +30,6 @@ body::before {
 #camp-activities-inquiry {
   background-image: url("https://github.com/flos-code/glem-markup/assets/148456982/c12968e1-7a35-4388-997a-39b76cf43c9f");
   background-size: 100% 100%;
-
   border-radius: 50px;
   display: flex;
   flex-direction: column;
@@ -57,15 +50,108 @@ h1 {
   font-size: 28px;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-
   margin-block: unset;
   padding: 10px;
+  margin-top: 64px;
 }
 
 form {
+  background-image: url("https://github.com/flos-code/glem-markup/assets/148456982/34c3b238-a1b6-451d-8732-42d3d9f8bec1");
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  margin-top: 32px;
-  background-color: blanchedalmond;
+  align-items: center;
+  padding: 48px 8px 8px 8px;
+  margin: 16px 32px 64px 32px;
+  box-sizing: border-box;
+  width: 400px;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+}
+
+#activity-select {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  margin: 4px 0 8px 0;
+  width: 80%;
+  border-radius: 17px;
+  border: 2px solid #e8a03d;
+}
+
+#activity-select:hover {
+  cursor: pointer;
+}
+
+#activity-select:focus-visible {
+  border: 2px solid #8d9900;
+  outline: unset;
+}
+
+#food-allergies,
+#additional-info {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 4px 0 8px 0;
+  width: 80%;
+  border-radius: 17px;
+  border: 2px solid #e8a03d;
+  height: 64px;
+  resize: none;
+}
+
+#food-allergies:focus-visible,
+#additional-info:focus-visible {
+  border: 2px solid #8d9900;
+  outline: unset;
+}
+
+button {
+  border: unset;
+  width: 50%;
+  padding: 4px 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 24px;
+  border-radius: 18.5px;
+  background-color: #8d9900;
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #676f12;
+}
+
+button:active {
+  background-color: white;
+  color: #8d9900;
+  border: 2px solid #8d9900;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8d9900;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #7a8500;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8d9900 #f0f0f0;
 }

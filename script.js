@@ -18,3 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Your information has been successfully submitted. See you in the camp 🏕️');
+    });
+});
