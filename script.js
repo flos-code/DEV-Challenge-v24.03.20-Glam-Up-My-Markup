@@ -23,6 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
     form.addEventListener('submit', function (e) {
         e.preventDefault();
+        document.getElementById('activity-select').selectedIndex = 0;
+        document.getElementById('food-allergies').value = '';
+        document.getElementById('additional-info').value = '';
+        document.querySelector('h1').style.backgroundImage = 'url("https://github.com/flos-code/glem-markup/assets/148456982/17dc4b4e-140a-45b3-9c23-e3d3197e964a")';
+
         alert('Your information has been successfully submitted. See you in the camp 🏕️');
     });
+    document.getElementById('activity-select').selectedIndex = 0;
+
 });
