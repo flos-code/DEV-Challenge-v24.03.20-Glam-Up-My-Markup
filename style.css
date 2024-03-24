@@ -1,16 +1,71 @@
+/* Colors: Deep Blue, Bright Orange, Lime Green, Sandy Beige, and Coral Red */
+
+:root {
+  --deep-blue: #003366;
+  --bright-orange: #ffa500;
+  --lime-green: #32cd32;
+  --sandy-beige: #f4a460;
+  --coral-red: #ff4040;
+
+  --url-hiking: url("https://github.com/flos-code/glem-markup/assets/148456982/fd496d12-1704-4ea1-a436-a03d9135550f");
+  --url-canoeing: url("https://github.com/flos-code/glem-markup/assets/148456982/ccb4a350-57ad-4d25-9810-0fd9af901605");
+  --url-fishing: url("https://github.com/flos-code/glem-markup/assets/148456982/8706af35-9d2f-46d9-8dff-2296ce9f9342");
+  --url-crafts: url("https://github.com/flos-code/glem-markup/assets/148456982/35c4e775-8281-4ea4-bebb-6d27081c9d53");
+  --url-archery: url("https://github.com/flos-code/glem-markup/assets/148456982/adc7cdaf-22d1-4579-986f-b44e529557da");
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin: 128px;
+  font-family: "Fredoka One", sans-serif;
 }
 
-section {
-  background-color: aqua;
+body::before {
+  content: "";
+  background-image: var(--url-hiking), var(--url-canoeing), var(--url-fishing),
+    var(--url-crafts), var(--url-archery);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#camp-activities-inquiry {
+  background-image: url("https://github.com/flos-code/glem-markup/assets/148456982/c12968e1-7a35-4388-997a-39b76cf43c9f");
+  background-size: 100% 100%;
+
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 32px;
+}
+
+h1 {
+  width: 280px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: url("https://github.com/flos-code/glem-markup/assets/148456982/17dc4b4e-140a-45b3-9c23-e3d3197e964a");
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 28px;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+
+  margin-block: unset;
+  padding: 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  padding: 16px;
+  margin-top: 32px;
+  background-color: blanchedalmond;
 }
