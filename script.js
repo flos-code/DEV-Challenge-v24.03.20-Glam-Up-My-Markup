@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
             header.style.backgroundImage = imageUrl;
         }
     });
+
+    document.getElementById('activity-select').required = true;
+    activitySelect.querySelector('option').disabled = true;
+    activitySelect.querySelector('option').selected = true;
 });
 
 document.addEventListener('DOMContentLoaded', function () {
